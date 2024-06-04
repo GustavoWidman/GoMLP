@@ -111,7 +111,7 @@ func (p *Perceptron) Train(inputs, outputs *mat.Dense, learningRate float64, epo
 
 				fmt.Printf("Epoch %d 	Accuracy: %.2f%%\n", epoch, accuracy)
 			}
-		} else if epoch%5000 == 0 {
+		} else if epoch%50000 == 0 {
 			predictions := p.FeedForward(inputs)
 
 			accuracy := p.Accuracy(predictions, outputs)

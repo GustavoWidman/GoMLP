@@ -29,7 +29,7 @@ func main() {
 	fmt.Println("Benchmark before training:")
 	p.Benchmark(inputs, outputs)
 
-	p.Train(inputs, outputs, 0.05, 50000)
+	p.Train(inputs, outputs, 0.1, 500000)
 
 	fmt.Println("\nBenchmark after training:")
 	p.Benchmark(inputs, outputs)
