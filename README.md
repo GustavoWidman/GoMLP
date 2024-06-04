@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Essa atividade tinha como objectivo o desenvolvimento de um Perceptron Multicamadas (MLP) para a solução do problema XOR. Nesse repositório, você encontrará duas implementações do MLP, uma usando Go (e a lib `gonum`) e outra usando Python (e a lib `pytorch`).
+Essa atividade tinha como objectivo o desenvolvimento de um Perceptron Multicamadas (MLP) para a solução do problema XOR. Nesse repositório, você encontrará duas implementações do MLP, uma usando Go (e a lib `gonum`) e outra usando Python (e a lib `pytorch`). A Implementação em Go foi feita do zero, sem o uso de bibliotecas de terceiros, enquanto a implementação em Python foi feita usando a biblioteca `pytorch` para facilitar a implementação do modelo, usando `SGD` como otimizador e `BCELoss` como função de perda.
 
 ## Estrutura
 
@@ -85,4 +85,4 @@ A seguir você encontrará a demonstração do código em Python.
 
 ## Resultados
 
-Em Python, o MLP foi treinado em 50 mil épocas e com uma taxa de aprendizado de 0.03, obtendo uma acurácia de 100% (sem arredondamento). Em Go, o MLP foi treinado em 500 mil épocas e com uma taxa de aprendizado de 0.10, obtendo uma acurácia média de 99.35% (sem arredondamento). Com arredondamento, a acurácia de ambos os modelos foi de 100%, o que significa que o modelo foi capaz de simular a função XOR (não aprender, ja que computadores não aprendem). Vale notar que a velocidade de execução do código em Go é muito superior ao código em Python, rodando 10 vezes mais épocas 10 vezes mais rápido (aproximadamente 100 vezes mais rápido).
+Em Python, o MLP foi treinado em 50 mil épocas e com uma taxa de aprendizado de 0.10, obtendo uma acurácia de 99.88% (sem arredondamento). Em Go, o MLP foi treinado em 500 mil épocas e com uma taxa de aprendizado de 0.10, obtendo uma acurácia média de 99.35% (sem arredondamento). Com arredondamento, a acurácia de ambos os modelos foi de 100%, o que significa que o modelo foi capaz de simular a função XOR (não aprender, ja que computadores não aprendem). Vale notar que a velocidade de execução do código em Go é muito superior ao código em Python, rodando 10 vezes mais épocas 10 vezes mais rápido (aproximadamente 100 vezes mais rápido).

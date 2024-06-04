@@ -6,15 +6,15 @@ from utils.text import format_tensors_side_by_side
 
 
 class Perceptron:
-	def __init__(self, inputRows: int, inputCols: int, learningRate: float):
+	def __init__(self, input_rows: int, input_cols: int, learningRate: float):
 		self.model = torch.nn.Sequential(
-			torch.nn.Linear(inputCols, inputRows),
-			torch.nn.ReLU(),
-			torch.nn.Linear(inputRows, 1),
+			torch.nn.Linear(input_cols, input_rows),
+			torch.nn.Sigmoid(),
+			torch.nn.Linear(input_rows, 1),
 			torch.nn.Sigmoid()
 		)
 
-		self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learningRate)
+		self.optimizer = torch.optim.SGD(self.model.parameters(), lr=learningRate)
 		self.loss_fn = torch.nn.BCELoss()
 
 	def feed_forward(self, input: torch.Tensor):

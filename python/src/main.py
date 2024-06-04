@@ -17,7 +17,7 @@ def main():
 		[0]
 	], dtype=torch.float32)
 
-	p = Perceptron(inputs.shape[0], inputs.shape[1], 0.03)
+	p = Perceptron(inputs.shape[0], inputs.shape[1], 0.1)
 
 	print("Benchmark before training:")
 	p.benchmark(inputs, outputs)
