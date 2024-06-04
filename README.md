@@ -54,7 +54,7 @@ go build -o go-mlp -ldflags "-s -w" src/main.go # Para compilar o código
 
 A seguir você encontrará a demonstração do código em Go.
 
-
+![GoMLP-GoDemo](https://github.com/GustavoWidman/GoMLP/assets/123963822/79388dac-b65a-42e6-9c7b-955f95372ebc)
 
 ### Python
 
@@ -81,7 +81,7 @@ python src/main.py
 
 A seguir você encontrará a demonstração do código em Python.
 
-
+![GoMLP-PyDemo](https://github.com/GustavoWidman/GoMLP/assets/123963822/6af92cf8-5557-41c3-8a9b-42aa6751ba06)
 
 ## Resultados
 
