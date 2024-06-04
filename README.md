@@ -81,7 +81,7 @@ python src/main.py
 
 A seguir você encontrará a demonstração do código em Python.
 
-![GoMLP-PyDemo](https://github.com/GustavoWidman/GoMLP/assets/123963822/6af92cf8-5557-41c3-8a9b-42aa6751ba06)
+![GoMLP-PyDemo](https://github.com/GustavoWidman/GoMLP/assets/123963822/1afe9f79-0972-44c1-a57a-333da3d405ff)
 
 ## Resultados
 
